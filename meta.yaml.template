@@ -1,0 +1,44 @@
+{% set name = "asttokens" %}
+{% set version = "2.0.5" %}
+{% set sha256 = "9a54c114f02c7a9480d56550932546a3f1fe71d8a02f1bc7ccd0ee3ee35cf4d5" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python >=3.5
+    - pip
+    - setuptools >=44
+    - setuptools_scm >=3.4.3
+    - toml
+  run:
+    - python >=3.5
+    - six
+
+test:
+  imports:
+    - asttokens
+
+about:
+  home: https://github.com/gristlabs/asttokens
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: The asttokens module annotates Python abstract syntax trees (ASTs) with the positions of tokens and text in the source code that generated them.
+  dev_url: https://github.com/gristlabs/asttokens
+
+extra:
+  recipe-maintainers:
+    - dopplershift
