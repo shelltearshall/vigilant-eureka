@@ -1,0 +1,27 @@
+{
+  "build": "py312h827c3e9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "aiohappyeyeballs >=2.3.0",
+    "aiosignal >=1.1.2",
+    "attrs >=17.3.0",
+    "frozenlist >=1.1.1",
+    "multidict >=4.5,<7.0",
+    "python >=3.12,<3.13.0a0",
+    "vc >=14.2,<15.0a0",
+    "vs2015_runtime >=14.29.30133,<15.0a0",
+    "yarl >=1.0,<2.0"
+  ],
+  "fn": "aiohttp-3.10.5-py312h827c3e9_0.conda",
+  "license": "MIT AND Apache-2.0",
+  "md5": "328827a0f4aff17fc199128355b30f01",
+  "name": "aiohttp",
+  "sha256": "6a792fc341d4a9b101c80ff9ad4b5f78876bb520b74c86f86f306a676d3fe2ad",
+  "size": 845330,
+  "subdir": "win-64",
+  "timestamp": 1725529823000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/aiohttp-3.10.5-py312h827c3e9_0.conda",
+  "version": "3.10.5"
+}
