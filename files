@@ -1,0 +1,8 @@
+Library/bin/aws-c-s3.dll
+Library/include/aws/s3/exports.h
+Library/include/aws/s3/s3.h
+Library/include/aws/s3/s3_client.h
+Library/lib/aws-c-s3.lib
+Library/lib/aws-c-s3/cmake/aws-c-s3-config.cmake
+Library/lib/aws-c-s3/cmake/shared/aws-c-s3-targets-release.cmake
+Library/lib/aws-c-s3/cmake/shared/aws-c-s3-targets.cmake
